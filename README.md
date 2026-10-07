@@ -13,7 +13,7 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+> **[v1.1.0-dev.1](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.1.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 Clear Scanner&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
@@ -27,6 +27,21 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 |----------|----------------|-----------|
 | [Local auto backup](#local-auto-backup) | Replaces cloud sync with a local backup. The Sync button opens the backup screen the first time. After a backup file has been chosen, Sync overwrites that file automatically. |  |
 | [Remove ads](#remove-ads) | Removes banner, interstitial and app open ads, and the "get Pro" ad banners. |  |
+
+</details>
+
+<details open>
+<summary>📦 Castbox&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 11.26.1 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Remove ads](#remove-ads) | Removes the banner and interstitial ads by turning on the app's own built-in ad block switch. Premium and purchases are not touched. |  |
 
 </details>
 
