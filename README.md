@@ -13,9 +13,9 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.2](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.0.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.0.0-dev.2](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.0.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
 <details open>
-<summary>📦 Clear Scanner&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<summary>📦 Clear Scanner&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -25,6 +25,7 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Local auto backup](#local-auto-backup) | Replaces cloud sync with a local backup. The Sync button opens the backup screen the first time. After a backup file has been chosen, Sync overwrites that file automatically. |  |
 | [Remove ads](#remove-ads) | Removes banner, interstitial and app open ads, and the "get Pro" ad banners. |  |
 
 </details>
@@ -58,3 +59,5 @@ See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation
 ## 📜 License
 
 SailHighSea Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+
+Patches are built automatically with GitHub Actions on every release.
