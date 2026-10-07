@@ -13,7 +13,7 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0-dev.2](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.1.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v1.1.0-dev.3](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.1.0-dev.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 Clear Scanner&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
@@ -36,12 +36,12 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 
 **🎯 Supported versions:**
 
-| 11.26.1 | 11.24.0 |
+| 11.26.1-260915290 | 11.24.0-260114369 |
 | :---: | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Remove ads](#remove-ads) | Removes the banner and interstitial ads by turning on the app's own built-in ad block switch. Premium and purchases are not touched. |  |
+| [Remove ads](#remove-ads) | Removes the banner and interstitial ads. Premium and purchases are not touched. |  |
 
 </details>
 

@@ -1,3 +1,9 @@
+## [1.1.0-dev.3](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.2...v1.1.0-dev.3) (2026-10-07)
+
+### 🐛 Bug Fixes
+
+* Castbox full version names and 11.24.0 ad managers ([484938e](https://github.com/SailHighSea/sailhighsea-patches/commit/484938e236dd2a922e65c8023a2de79272bb5114))
+
 ## [1.1.0-dev.2](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2026-10-07)
 
 ### 🐛 Bug Fixes
