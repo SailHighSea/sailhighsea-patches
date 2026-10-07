@@ -58,3 +58,5 @@ See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation
 ## 📜 License
 
 SailHighSea Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+
+Patches are built automatically with GitHub Actions on every release.
