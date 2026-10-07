@@ -1,3 +1,9 @@
+## [1.1.0-dev.1](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.0.0...v1.1.0-dev.1) (2026-10-07)
+
+### ✨ New Features
+
+* support Castbox 11.24.0, 11.26.1 in remove ads ([4ff128a](https://github.com/SailHighSea/sailhighsea-patches/commit/4ff128a302fa57340665e112f33be190c38a018f))
+
 ## 1.0.0 (2026-10-07)
 
 ### ✨ New Features
