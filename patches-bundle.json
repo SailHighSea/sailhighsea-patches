@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-07T13:23:38",
-  "description": "## [1.1.0-dev.1](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.0.0...v1.1.0-dev.1) (2026-10-07)\n\n### ✨ New Features\n\n* support Castbox 11.24.0, 11.26.1 in remove ads ([4ff128a](https://github.com/SailHighSea/sailhighsea-patches/commit/4ff128a302fa57340665e112f33be190c38a018f))",
-  "download_url": "https://github.com/SailHighSea/sailhighsea-patches/releases/download/v1.1.0-dev.1/patches-1.1.0-dev.1.mpp",
+  "created_at": "2026-10-07T13:44:53",
+  "description": "## [1.1.0-dev.2](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2026-10-07)\n\n### 🐛 Bug Fixes\n\n* use full Castbox version names ([24d1d9e](https://github.com/SailHighSea/sailhighsea-patches/commit/24d1d9e4c14881ead7211925b756c9f72e59a1b2))",
+  "download_url": "https://github.com/SailHighSea/sailhighsea-patches/releases/download/v1.1.0-dev.2/patches-1.1.0-dev.2.mpp",
   "signature_download_url": "",
-  "version": "1.1.0-dev.1"
+  "version": "1.1.0-dev.2"
 }

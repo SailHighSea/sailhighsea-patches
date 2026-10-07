@@ -1,3 +1,9 @@
+## [1.1.0-dev.2](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2026-10-07)
+
+### 🐛 Bug Fixes
+
+* use full Castbox version names ([24d1d9e](https://github.com/SailHighSea/sailhighsea-patches/commit/24d1d9e4c14881ead7211925b756c9f72e59a1b2))
+
 ## [1.1.0-dev.1](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.0.0...v1.1.0-dev.1) (2026-10-07)
 
 ### ✨ New Features
