@@ -1,3 +1,9 @@
+## [1.1.0-dev.4](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.3...v1.1.0-dev.4) (2026-10-08)
+
+### ✨ New Features
+
+* add HDQ Walls remove ads patch ([90f6dca](https://github.com/SailHighSea/sailhighsea-patches/commit/90f6dcaea3474eef24d6a4a23c57b180493b5dd0))
+
 ## [1.1.0-dev.3](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.2...v1.1.0-dev.3) (2026-10-07)
 
 ### 🐛 Bug Fixes
