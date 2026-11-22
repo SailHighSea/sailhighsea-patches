@@ -14,7 +14,6 @@ object AppRaterFingerprint : Fingerprint(
     parameters = listOf("Landroid/content/Context;"),
     filters = listOf(
         string("apprater"),
-        string("dontshowagain"),
         string("launch_count"),
     )
 )

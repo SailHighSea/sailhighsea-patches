@@ -21,6 +21,14 @@ val autoBackupPatch = bytecodePatch(
     extendWith("extensions/extension.mpe")
 
     execute {
+        // 10.2.56 renamed several obfuscated methods; 10.2.18 still uses the old names.
+        val isNew = BackupWriteFingerprint.matchOrNull() != null
+        val writeMethod = if (isNew) "T" else "O"
+        val openSyncMethod = if (isNew) "W" else "T"
+        val openSyncFingerprint = if (isNew) OpenSyncScreenFingerprint else OpenSyncScreenLegacyFingerprint
+        val syncNowFingerprint = if (isNew) SyncNowFingerprint else SyncNowLegacyFingerprint
+        val fileChosenFingerprint = if (isNew) BackupFileChosenFingerprint else BackupFileChosenLegacyFingerprint
+
         // 1. "Create a backup" button: before the file picker opens (after the app's own checks),
         //    write to the remembered file if there is one. Index is right after Intent.<init>.
         BackupButtonClickFingerprint.let {
@@ -31,7 +39,7 @@ val autoBackupPatch = bytecodePatch(
                     invoke-static {v5}, $EXTENSION_CLASS->openStream(Landroid/app/Activity;)Ljava/io/OutputStream;
                     move-result-object v3
                     if-eqz v3, :manual
-                    invoke-virtual {v5, v3}, $BACKUP_ACTIVITY->T(Ljava/io/OutputStream;)V
+                    invoke-virtual {v5, v3}, $BACKUP_ACTIVITY->$writeMethod(Ljava/io/OutputStream;)V
                     return-void
                     :manual
                     nop
@@ -40,7 +48,7 @@ val autoBackupPatch = bytecodePatch(
         }
 
         // 2. Remember the file the user picked, right before the backup is written to it.
-        BackupFileChosenFingerprint.let {
+        fileChosenFingerprint.let {
             val beforeBackupWrite = it.instructionMatches[0].index
             it.method.addInstructions(
                 beforeBackupWrite,
@@ -61,7 +69,7 @@ val autoBackupPatch = bytecodePatch(
         }
 
         // 4. Sync screen -> backup screen.
-        OpenSyncScreenFingerprint.method.addInstructions(
+        openSyncFingerprint.method.addInstructions(
             0,
             """
                 new-instance v0, Landroid/content/Intent;
@@ -74,10 +82,10 @@ val autoBackupPatch = bytecodePatch(
         )
 
         // 5. "Sync now" always goes to the same place.
-        SyncNowFingerprint.method.addInstructions(
+        syncNowFingerprint.method.addInstructions(
             0,
             """
-                invoke-virtual {p0}, $MAIN_ACTIVITY->W()V
+                invoke-virtual {p0}, $MAIN_ACTIVITY->$openSyncMethod()V
                 return-void
             """
         )

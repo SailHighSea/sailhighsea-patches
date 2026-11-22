@@ -5,7 +5,7 @@ import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 
 /**
- * Clear Scanner 10.2.56 (com.indymobileapp.document.scanner) is obfuscated, so these fingerprints
+ * Clear Scanner 10.2.18 and 10.2.56 (com.indymobileapp.document.scanner) is obfuscated, so these fingerprints
  * anchor on string constants that survive obfuscation.
  */
 
@@ -29,10 +29,8 @@ object RemoteConfigConstructorFingerprint : Fingerprint(
     parameters = listOf(),
 )
 
-/** The app's ad manager singleton (obfuscated `d44`). Its constructor contains its log tag. */
+/** The app's ad manager singleton (obfuscated `d44`). Some of its methods contain its log tag. */
 object AdManagerFingerprint : Fingerprint(
-    name = "<init>",
-    parameters = listOf(),
     filters = listOf(
         string("PSAdManager:"),
     )

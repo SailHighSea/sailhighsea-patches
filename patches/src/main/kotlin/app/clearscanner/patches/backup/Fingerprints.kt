@@ -4,9 +4,45 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.methodCall
 import app.morphe.patcher.string
 
-// Clear Scanner 10.2.56 is obfuscated. These names are pinned to that exact version.
+// Clear Scanner is obfuscated. The names below are pinned per version: the plain objects are 10.2.56,
+// the "Legacy" ones are 10.2.18. The patch picks the set by checking which backup-write method exists.
 
-/** MainActivity.W(): opens the cloud sync screen. */
+/** 10.2.56 only: MyBackupActivity.T(OutputStream), used to tell the two versions apart. */
+object BackupWriteFingerprint : Fingerprint(
+    definingClass = "Lcom/indymobile/app/activity/MyBackupActivity;",
+    name = "T",
+    returnType = "V",
+    parameters = listOf("Ljava/io/OutputStream;")
+)
+
+/** 10.2.18: MainActivity.T(): opens the cloud sync screen. */
+object OpenSyncScreenLegacyFingerprint : Fingerprint(
+    definingClass = "Lcom/indymobile/app/activity/MainActivity;",
+    name = "T",
+    returnType = "V",
+    parameters = listOf()
+)
+
+/** 10.2.18: MainActivity.U(boolean): "Sync now". */
+object SyncNowLegacyFingerprint : Fingerprint(
+    definingClass = "Lcom/indymobile/app/activity/MainActivity;",
+    name = "U",
+    returnType = "V",
+    parameters = listOf("Z")
+)
+
+/** 10.2.18: MyBackupActivity.onActivityResult(); the backup is written by O(OutputStream). */
+object BackupFileChosenLegacyFingerprint : Fingerprint(
+    definingClass = "Lcom/indymobile/app/activity/MyBackupActivity;",
+    name = "onActivityResult",
+    returnType = "V",
+    parameters = listOf("I", "I", "Landroid/content/Intent;"),
+    filters = listOf(
+        methodCall(definingClass = "this", name = "O")
+    )
+)
+
+/** 10.2.56: MainActivity.W(): opens the cloud sync screen. */
 object OpenSyncScreenFingerprint : Fingerprint(
     definingClass = "Lcom/indymobile/app/activity/MainActivity;",
     name = "W",
@@ -48,7 +84,6 @@ object BackupFileChosenFingerprint : Fingerprint(
 
 /** Click listener of the backup screen buttons. The backup case opens a CREATE_DOCUMENT file picker. */
 object BackupButtonClickFingerprint : Fingerprint(
-    definingClass = "Lht3;",
     name = "onClick",
     returnType = "V",
     parameters = listOf("Landroid/view/View;"),
