@@ -1,3 +1,9 @@
+## [1.1.0-dev.6](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.5...v1.1.0-dev.6) (2026-11-22)
+
+### 🐛 Bug Fixes
+
+* ad manager fingerprint on 10.2.56, restore 10.2.18 support ([54fbce4](https://github.com/SailHighSea/sailhighsea-patches/commit/54fbce475167675c153bb6371e7a48871072ce3d))
+
 ## [1.1.0-dev.5](https://github.com/SailHighSea/sailhighsea-patches/compare/v1.1.0-dev.4...v1.1.0-dev.5) (2026-11-22)
 
 ### ✨ New Features
