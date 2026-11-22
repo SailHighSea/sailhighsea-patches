@@ -13,9 +13,9 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0-dev.4](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.1.0-dev.4)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
+> **[v1.1.0-dev.5](https://github.com/SailHighSea/sailhighsea-patches/releases/tag/v1.1.0-dev.5)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
 <details open>
-<summary>📦 Clear Scanner&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 Clear Scanner&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -25,6 +25,7 @@ Click here to add these patches to Morphe: https://morphe.software/add-source?gi
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
+| [Disable popups](#disable-popups) | Removes the "rate this app" popup and the "upgrade to Pro" screen shown on start. |  |
 | [Local auto backup](#local-auto-backup) | Replaces cloud sync with a local backup. The Sync button opens the backup screen the first time. After a backup file has been chosen, Sync overwrites that file automatically. |  |
 | [Remove ads](#remove-ads) | Removes banner, interstitial and app open ads, and the "get Pro" ad banners. |  |
 
