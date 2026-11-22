@@ -4,20 +4,20 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.methodCall
 import app.morphe.patcher.string
 
-// Clear Scanner 10.2.18 is obfuscated. These names are pinned to that exact version.
+// Clear Scanner 10.2.56 is obfuscated. These names are pinned to that exact version.
 
-/** MainActivity.T(): opens the cloud sync screen. */
+/** MainActivity.W(): opens the cloud sync screen. */
 object OpenSyncScreenFingerprint : Fingerprint(
     definingClass = "Lcom/indymobile/app/activity/MainActivity;",
-    name = "T",
+    name = "W",
     returnType = "V",
     parameters = listOf()
 )
 
-/** MainActivity.U(boolean): "Sync now". Starts a sync, or opens the sync screen when not connected. */
+/** MainActivity.X(boolean): "Sync now". Starts a sync, or opens the sync screen when not connected. */
 object SyncNowFingerprint : Fingerprint(
     definingClass = "Lcom/indymobile/app/activity/MainActivity;",
-    name = "U",
+    name = "X",
     returnType = "V",
     parameters = listOf("Z")
 )
@@ -35,20 +35,20 @@ object BackupScreenCreateFingerprint : Fingerprint(
     )
 )
 
-/** MyBackupActivity.onActivityResult(): the user picked a file; the backup is written by O(OutputStream). */
+/** MyBackupActivity.onActivityResult(): the user picked a file; the backup is written by T(OutputStream). */
 object BackupFileChosenFingerprint : Fingerprint(
     definingClass = "Lcom/indymobile/app/activity/MyBackupActivity;",
     name = "onActivityResult",
     returnType = "V",
     parameters = listOf("I", "I", "Landroid/content/Intent;"),
     filters = listOf(
-        methodCall(definingClass = "this", name = "O")
+        methodCall(definingClass = "this", name = "T")
     )
 )
 
 /** Click listener of the backup screen buttons. The backup case opens a CREATE_DOCUMENT file picker. */
 object BackupButtonClickFingerprint : Fingerprint(
-    definingClass = "Lmi3;",
+    definingClass = "Lht3;",
     name = "onClick",
     returnType = "V",
     parameters = listOf("Landroid/view/View;"),

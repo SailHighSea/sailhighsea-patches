@@ -31,7 +31,7 @@ val autoBackupPatch = bytecodePatch(
                     invoke-static {v5}, $EXTENSION_CLASS->openStream(Landroid/app/Activity;)Ljava/io/OutputStream;
                     move-result-object v3
                     if-eqz v3, :manual
-                    invoke-virtual {v5, v3}, $BACKUP_ACTIVITY->O(Ljava/io/OutputStream;)V
+                    invoke-virtual {v5, v3}, $BACKUP_ACTIVITY->T(Ljava/io/OutputStream;)V
                     return-void
                     :manual
                     nop
@@ -77,7 +77,7 @@ val autoBackupPatch = bytecodePatch(
         SyncNowFingerprint.method.addInstructions(
             0,
             """
-                invoke-virtual {p0}, $MAIN_ACTIVITY->T()V
+                invoke-virtual {p0}, $MAIN_ACTIVITY->W()V
                 return-void
             """
         )

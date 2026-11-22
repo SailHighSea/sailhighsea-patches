@@ -24,8 +24,8 @@ public final class AutoBackup {
     private static final String KEY_URI = "backup_file_uri";
     private static final String ACTION_AUTO_BACKUP = "app.clearscanner.action.AUTO_BACKUP";
 
-    /** Resource id of the "Create a backup" button in the Clear Scanner 10.2.18 backup screen. */
-    private static final int BACKUP_BUTTON_ID = 0x7f090100;
+    /** Resource id of the "Create a backup" button in the Clear Scanner 10.2.56 backup screen. */
+    private static final int BACKUP_BUTTON_ID = 0x7f09010a;
 
     /** True only while the automatic click on the backup button is being processed. */
     private static volatile boolean autoRequested;

@@ -6,7 +6,7 @@ import app.clearscanner.patches.shared.Constants.COMPATIBILITY_CLEAR_SCANNER
 import com.android.tools.smali.dexlib2.Opcode
 
 /**
- * Remote config fields (on the obfuscated config class, names valid for 10.2.18) that turn ads on.
+ * Remote config fields (on the obfuscated config class, names valid for 10.2.56) that turn ads on.
  *
  * Key in Firebase Remote Config -> field
  *   ads_banner_display                -> o   banner ads
